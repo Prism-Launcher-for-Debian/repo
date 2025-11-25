@@ -62,4 +62,6 @@ jobs:
             =szki
             -----END PGP PUBLIC KEY BLOCK-----
 #          host-arch: arm64
+          setup-hook:
+            apt-get install -y apt-transport-https
           source-dir: prismlauncher

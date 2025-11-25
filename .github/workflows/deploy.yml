@@ -17,7 +17,7 @@ jobs:
 #          - ubuntu:questing
 #        arch: [i386, amd64, armhf, arm64]
         suite: [debian:bookworm-slim]
-        arch: [amd64]
+        arch: [arm64]
     steps:
       - name: Checkout prismlauncher packaging
         run: git clone --branch debian/unstable https://salsa.debian.org/BenTheTechGuy/prismlauncher.git

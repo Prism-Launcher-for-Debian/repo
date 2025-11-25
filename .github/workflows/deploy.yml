@@ -21,6 +21,10 @@ jobs:
     steps:
       - name: Checkout prismlauncher packaging
         run: git clone --branch debian/unstable --single-branch https://salsa.debian.org/BenTheTechGuy/prismlauncher.git
+      - name: Install git-buildpackage
+        run: sudo apt-get install -y git-buildpackage
+      - name: Extract original tarball from git
+        run: cd prismlauncher && gbp export-orig
       - name: Build Debian package
         uses: jtdor/build-deb-action@v1
         with:

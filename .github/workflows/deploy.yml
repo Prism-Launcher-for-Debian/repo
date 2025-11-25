@@ -2,23 +2,23 @@ name: "Build and upload Prism Launcher Release"
 on: workflow_dispatch
 
 jobs:
-#  checkout-repo:
-#    name: Checkout current repo
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Cache build directory
-#        uses: actions/cache@v4
-#        with:
-#          path: ./repo
-#          key: cache-${{ github.run_id }}-${{ github.run_attempt }}
-#          enableCrossOsArchive: true
-#      - name: Checkout repo
-#        uses: checkout@v6
-#        with:
-#          ref: repo
-#          path: ./repo
+  checkout-repo:
+    name: Checkout current repo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cache build directory
+        uses: actions/cache@v4
+        with:
+          path: ./repo
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}
+          enableCrossOsArchive: true
+      - name: Checkout repo
+        uses: checkout@v6
+        with:
+          ref: repo
+          path: ./repo
   build-debian-x86:
-    name: Build and upload Prism Launcher for ${{ matrix.suite }} on amd64
+    name: Build for ${{ matrix.suite }} on amd64
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -83,3 +83,11 @@ jobs:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
       - name: Sign package
         run: sudo chmod -Rv 777 ./debian && debsign -k${{ steps.importkey.outputs.fingerprint }} ./debian/artifacts/*.changes
+      - name: Get repo from cache
+        uses: actions/cache@v4
+        with:
+          path: ./repo
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}
+          enableCrossOsArchive: true
+      - name: Include package in repo
+        run: reprepro -Vb ./repo include ./debian/artifacts/*.changes

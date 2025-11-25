@@ -20,7 +20,7 @@ jobs:
         arch: [amd64]
     steps:
       - name: Checkout prismlauncher packaging
-        run: git clone --branch debian/unstable --single-branch https://salsa.debian.org/BenTheTechGuy/prismlauncher.git
+        run: git clone --branch debian/unstable https://salsa.debian.org/BenTheTechGuy/prismlauncher.git
       - name: Install git-buildpackage
         run: sudo apt-get install -y git-buildpackage
       - name: Extract original tarball from git

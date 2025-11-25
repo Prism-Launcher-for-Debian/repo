@@ -20,10 +20,7 @@ jobs:
         arch: [amd64]
     steps:
       - name: Checkout prismlauncher packaging
-        uses: actions/checkout@v6
-        with:
-          repository: https://salsa.debian.org/BenTheTechGuy/prismlauncher
-          ref: debian/unstable
+        run: git clone --branch debian/unstable --single-branch https://salsa.debian.org/BenTheTechGuy/prismlauncher.git
       - name: Build Debian package
         uses: jtdor/build-deb-action@v1
         with:

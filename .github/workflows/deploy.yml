@@ -33,11 +33,11 @@ jobs:
       - name: Install Debian tools
         run: sudo apt-get install -y devscripts git-buildpackage reprepro
       - name: Extract original tarball from git
-        run: cd prismlauncher && gbp export-orig
+        run: cd ./prismlauncher && gbp export-orig
       - name: Build Debian package
         uses: jtdor/build-deb-action@v1
         with:
-          before-build-hook: dch -D ${{ matrix.suite }} --bpo ""
+          before-build-hook: cd ./prismlauncher && dch -D ${{ matrix.suite }} --bpo ""
           docker-image: debian:${{ matrix.suite }}-slim
           extra-build-deps: temurin-17-jdk
           extra-repos: deb https://packages.adoptium.net/artifactory/deb ${{ matrix.suite }} main

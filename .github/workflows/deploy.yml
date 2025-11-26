@@ -90,7 +90,7 @@ jobs:
           key: cache-${{ github.run_id }}-${{ github.run_attempt }}
           enableCrossOsArchive: true
       - name: Include package in repo
-        run: reprepro -Vb ./repo include ${{ matrix.suite }} ./debian/artifacts/*.changes
+        run: for file in ./debian/artifacts/*.changes; do reprepro -Vb ./repo include ${{ matrix.suite }} "$file"; done
   commit:
     name: Upload built packages to repository
     runs-on: ubuntu-latest

@@ -25,7 +25,8 @@ jobs:
         suite:
           - bookworm
           - trixie
-          - forky
+# no forky yet, missing Adoptium repo
+#          - forky
     steps:
       - name: Checkout prismlauncher packaging
         run: git clone --branch debian/unstable https://salsa.debian.org/BenTheTechGuy/prismlauncher.git
@@ -98,7 +99,8 @@ jobs:
         suite:
           - bookworm
           - trixie
-          - forky
+# no forky yet, missing Adoptium repo
+#          - forky
     steps:
       - name: Checkout prismlauncher packaging
         run: git clone --branch debian/unstable https://salsa.debian.org/BenTheTechGuy/prismlauncher.git
@@ -170,10 +172,10 @@ jobs:
     strategy:
       matrix:
         suite:
-          - jammy
           - noble
           - plucky
-          - questing
+# no questing yet, missing Adoptium repo
+#          - questing
     steps:
       - name: Checkout prismlauncher packaging
         run: git clone --branch debian/unstable https://salsa.debian.org/BenTheTechGuy/prismlauncher.git
@@ -244,10 +246,10 @@ jobs:
     strategy:
       matrix:
         suite:
-          - jammy
           - noble
           - plucky
-          - questing
+# no questing yet, missing Adoptium repo
+#          - questing
     steps:
       - name: Checkout prismlauncher packaging
         run: git clone --branch debian/unstable https://salsa.debian.org/BenTheTechGuy/prismlauncher.git

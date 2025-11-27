@@ -3,7 +3,7 @@
 Run the following commands as root:
 ```
 wget https://benthetechguy.github.io/PrismLauncherDebRepo/prismlauncher.gpg -O /usr/share/keyrings/prismlauncher-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/prismlauncher-archive-keyring.gpg] https://benthetechguy.github.io/PrismLauncherDebRepo `. /etc/os-release; echo $VERSION_CODENAME` contrib" > /etc/apt/sources.list.d/prismlauncher.list
+echo "deb [signed-by=/usr/share/keyrings/prismlauncher-archive-keyring.gpg] https://benthetechguy.github.io/PrismLauncherDebRepo `. /etc/os-release; echo $VERSION_CODENAME` main" > /etc/apt/sources.list.d/prismlauncher.list
 apt update && apt install prismlauncher
 ```
 ## How to set up your own repo
@@ -32,3 +32,5 @@ The current `repo` branch of this repository contains an example file with all c
 10. Go to Settings > Actions > General and set Workflow Permissions to Read and Write.
 11. Enable GitHub Pages to serve the `repo` branch.
 12. Go to the Actions page and manually run the workflow every time you want to build new packages for all the releases specified in your `conf/distributions` file; it will automatically upload these packages to the repository.
+
+When new Debian/Ubuntu releases come out, make sure to run step 6 again after editing `conf/distributions`. Also don't forget to edit `.github/workflows/deploy.yml` to build the new releases.

@@ -85,13 +85,19 @@ jobs:
       - name: Sign package
         run: sudo chmod -Rv 777 ./debian && debsign -k${{ steps.importkey.outputs.fingerprint }} ./debian/artifacts/*.changes
       - name: Get repo from cache
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
           path: ./repo
           key: cache-${{ github.run_id }}-${{ github.run_attempt }}
           enableCrossOsArchive: true
       - name: Include package in repo
         run: for file in ./debian/artifacts/*amd64.changes; do reprepro -Vb ./repo include ${{ matrix.suite }} "$file"; done
+      - name: Save repo to cache
+        uses: actions/cache/save@v4
+        with:
+          path: ./repo
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}
+          enableCrossOsArchive: true
   build-debian-arm:
     name: Build for ${{ matrix.suite }} on arm64
     runs-on: ubuntu-24.04-arm
@@ -161,13 +167,19 @@ jobs:
       - name: Sign package
         run: sudo chmod -Rv 777 ./debian && debsign -k${{ steps.importkey.outputs.fingerprint }} ./debian/artifacts/*.changes
       - name: Get repo from cache
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
           path: ./repo
           key: cache-${{ github.run_id }}-${{ github.run_attempt }}
           enableCrossOsArchive: true
       - name: Include package in repo
         run: for file in ./debian/artifacts/*arm64.changes; do reprepro -Vb ./repo include ${{ matrix.suite }} "$file"; done
+      - name: Save repo to cache
+        uses: actions/cache/save@v4
+        with:
+          path: ./repo
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}
+          enableCrossOsArchive: true
   build-ubuntu-x86:
     name: Build for ${{ matrix.suite }} on amd64
     runs-on: ubuntu-latest
@@ -189,7 +201,7 @@ jobs:
         env:
           DEB_BUILD_OPTIONS: noautodbgsym
         with:
-          before-build-hook: apt-get update && apt-get install -y devscripts libdistro-info-perl && cd ./prismlauncher && dch -D ${{ matrix.suite }} --local ~${{ matrix.suite }} ""
+          before-build-hook: apt-get update && apt-get install -y devscripts && cd ./prismlauncher && dch -D ${{ matrix.suite }} --local ~${{ matrix.suite }} ""
           buildpackage-opts: --build=binary
           docker-image: ubuntu:${{ matrix.suite }}
           source-dir: prismlauncher
@@ -201,13 +213,19 @@ jobs:
       - name: Sign package
         run: sudo chmod -Rv 777 ./debian && debsign -k${{ steps.importkey.outputs.fingerprint }} ./debian/artifacts/*.changes
       - name: Get repo from cache
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
           path: ./repo
           key: cache-${{ github.run_id }}-${{ github.run_attempt }}
           enableCrossOsArchive: true
       - name: Include package in repo
         run: for file in ./debian/artifacts/*amd64.changes; do reprepro -Vb ./repo include ${{ matrix.suite }} "$file"; done
+      - name: Save repo to cache
+        uses: actions/cache/save@v4
+        with:
+          path: ./repo
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}
+          enableCrossOsArchive: true
   build-ubuntu-arm:
     name: Build for ${{ matrix.suite }} on arm64
     runs-on: ubuntu-24.04-arm
@@ -229,7 +247,7 @@ jobs:
         env:
           DEB_BUILD_OPTIONS: noautodbgsym
         with:
-          before-build-hook: apt-get update && apt-get install -y devscripts libdistro-info-perl && cd ./prismlauncher && dch -D ${{ matrix.suite }} --local ~${{ matrix.suite }} ""
+          before-build-hook: apt-get update && apt-get install -y devscripts && cd ./prismlauncher && dch -D ${{ matrix.suite }} --local ~${{ matrix.suite }} ""
           buildpackage-opts: --build=binary
           docker-image: ubuntu:${{ matrix.suite }}
           host-arch: arm64
@@ -242,13 +260,19 @@ jobs:
       - name: Sign package
         run: sudo chmod -Rv 777 ./debian && debsign -k${{ steps.importkey.outputs.fingerprint }} ./debian/artifacts/*.changes
       - name: Get repo from cache
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
           path: ./repo
           key: cache-${{ github.run_id }}-${{ github.run_attempt }}
           enableCrossOsArchive: true
       - name: Include package in repo
         run: for file in ./debian/artifacts/*arm64.changes; do reprepro -Vb ./repo include ${{ matrix.suite }} "$file"; done
+      - name: Save repo to cache
+        uses: actions/cache/save@v4
+        with:
+          path: ./repo
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}
+          enableCrossOsArchive: true
   commit:
     name: Upload built packages to repository
     runs-on: ubuntu-latest

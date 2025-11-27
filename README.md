@@ -24,6 +24,7 @@ Description: Prism Launcher repository for Debian and Ubuntu
 Make blocks for every release of Debian or Ubuntu you'd like. Remove the `Suite` variable for Ubuntu releases.
 Don't forget to change the `SignWith` variable to the fingerprint of your generated PGP key.
 The current `repo` branch of this repository contains an example file with all current Debian and Ubuntu releases.
+
 5. Install `reprepro` on your system
 6. Run `reprepro createsymlinks` then `reprepro export` to set up the repository.
 7. Export the public key of your generated PGP key to some file in the root folder, called for example `prismlauncher.gpg`.

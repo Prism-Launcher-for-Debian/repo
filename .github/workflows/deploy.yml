@@ -38,6 +38,7 @@ jobs:
         uses: jtdor/build-deb-action@v1
         with:
           before-build-hook: cd ./prismlauncher && dch -D ${{ matrix.suite }} --bpo ""
+          buildpackage-opts: --build=binary
           docker-image: debian:${{ matrix.suite }}-slim
           extra-build-deps: temurin-17-jdk
           extra-repos: deb https://packages.adoptium.net/artifactory/deb ${{ matrix.suite }} main
@@ -112,6 +113,7 @@ jobs:
         uses: jtdor/build-deb-action@v1
         with:
           before-build-hook: cd ./prismlauncher && dch -D ${{ matrix.suite }} --bpo ""
+          buildpackage-opts: --build=binary
           docker-image: debian:${{ matrix.suite }}-slim
           extra-build-deps: temurin-17-jdk
           extra-repos: deb https://packages.adoptium.net/artifactory/deb ${{ matrix.suite }} main
@@ -186,6 +188,7 @@ jobs:
         uses: jtdor/build-deb-action@v1
         with:
           before-build-hook: cd ./prismlauncher && dch -D ${{ matrix.suite }} --bpo ""
+          buildpackage-opts: --build=binary
           docker-image: ubuntu:${{ matrix.suite }}
           setup-hook:
             apt-get update && apt-get install -y devscripts && sed -i s|contrib/|/g prismlauncher/debian/control
@@ -225,6 +228,7 @@ jobs:
         uses: jtdor/build-deb-action@v1
         with:
           before-build-hook: cd ./prismlauncher && dch -D ${{ matrix.suite }} --bpo ""
+          buildpackage-opts: --build=binary
           docker-image: ubuntu:${{ matrix.suite }}
           host-arch: arm64
           setup-hook:

@@ -18,9 +18,8 @@ jobs:
       - name: Cache package build directory
         uses: actions/cache@v4
         with:
-          path: ./${{ matrix.suite }}-${{ matrix.arch }}
-          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.suite }}-${{ matrix.arch }}
-          enableCrossOsArchive: true
+          path: ./${{ matrix.suite }}-amd64
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.suite }}-amd64
       - name: Install Debian tools
         run: sudo apt-get install -y devscripts git-buildpackage
       - name: Extract original tarball from git
@@ -28,7 +27,7 @@ jobs:
       - name: Build Debian package
         uses: jtdor/build-deb-action@v1
         with:
-          artifacts-dir: ./${{ matrix.suite }}-${{ matrix.arch }}
+          artifacts-dir: ./${{ matrix.suite }}-amd64
           before-build-hook: cd ./prismlauncher && dch -D ${{ matrix.suite }} --bpo ""
           buildpackage-opts: --build=binary
           docker-image: debian:${{ matrix.suite }}-slim
@@ -75,7 +74,7 @@ jobs:
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
       - name: Sign package
-        run: sudo chmod -Rv 777 ./${{ matrix.suite }}-${{ matrix.arch }} && debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-${{ matrix.arch }}/*.changes
+        run: sudo chmod -Rv 777 ./${{ matrix.suite }}-amd64 && debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-amd64/*.changes
   build-debian-arm:
     name: Build for ${{ matrix.suite }} on arm64
     runs-on: ubuntu-24.04-arm
@@ -92,8 +91,8 @@ jobs:
       - name: Cache package build directory
         uses: actions/cache@v4
         with:
-          path: ./${{ matrix.suite }}-${{ matrix.arch }}
-          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.suite }}-${{ matrix.arch }}
+          path: ./${{ matrix.suite }}-arm64
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.suite }}-arm64
           enableCrossOsArchive: true
       - name: Install Debian tools
         run: sudo apt-get install -y devscripts git-buildpackage
@@ -102,7 +101,7 @@ jobs:
       - name: Build Debian package
         uses: jtdor/build-deb-action@v1
         with:
-          artifacts-dir: ./${{ matrix.suite }}-${{ matrix.arch }}
+          artifacts-dir: ./${{ matrix.suite }}-arm64
           before-build-hook: cd ./prismlauncher && dch -D ${{ matrix.suite }} --bpo ""
           buildpackage-opts: --build=binary
           docker-image: debian:${{ matrix.suite }}-slim
@@ -150,7 +149,7 @@ jobs:
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
       - name: Sign package
-        run: sudo chmod -Rv 777 ./${{ matrix.suite }}-${{ matrix.arch }} && debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-${{ matrix.arch }}/*.changes
+        run: sudo chmod -Rv 777 ./${{ matrix.suite }}-arm64 && debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-arm64/*.changes
   build-ubuntu-x86:
     name: Build for ${{ matrix.suite }} on amd64
     runs-on: ubuntu-latest
@@ -166,9 +165,8 @@ jobs:
       - name: Cache package build directory
         uses: actions/cache@v4
         with:
-          path: ./${{ matrix.suite }}-${{ matrix.arch }}
-          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.suite }}-${{ matrix.arch }}
-          enableCrossOsArchive: true
+          path: ./${{ matrix.suite }}-amd64
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.suite }}-amd64
       - name: Install Debian tools
         run: sudo apt-get install -y devscripts git-buildpackage
       - name: Extract original tarball from git
@@ -178,7 +176,7 @@ jobs:
         env:
           DEB_BUILD_OPTIONS: noautodbgsym
         with:
-          artifacts-dir: ./${{ matrix.suite }}-${{ matrix.arch }}
+          artifacts-dir: ./${{ matrix.suite }}-amd64
           before-build-hook: apt-get update && apt-get install -y devscripts && cd ./prismlauncher && dch -D ${{ matrix.suite }} --local ~${{ matrix.suite }} ""
           buildpackage-opts: --build=binary
           docker-image: ubuntu:${{ matrix.suite }}
@@ -189,7 +187,7 @@ jobs:
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
       - name: Sign package
-        run: sudo chmod -Rv 777 ./${{ matrix.suite }}-${{ matrix.arch }} && debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-${{ matrix.arch }}/*.changes
+        run: sudo chmod -Rv 777 ./${{ matrix.suite }}-amd64 && debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-amd64/*.changes
   build-ubuntu-arm:
     name: Build for ${{ matrix.suite }} on arm64
     runs-on: ubuntu-24.04-arm
@@ -205,8 +203,8 @@ jobs:
       - name: Cache package build directory
         uses: actions/cache@v4
         with:
-          path: ./${{ matrix.suite }}-${{ matrix.arch }}
-          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.suite }}-${{ matrix.arch }}
+          path: ./${{ matrix.suite }}-arm64
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.suite }}-arm64
           enableCrossOsArchive: true
       - name: Install Debian tools
         run: sudo apt-get install -y devscripts git-buildpackage
@@ -217,7 +215,7 @@ jobs:
         env:
           DEB_BUILD_OPTIONS: noautodbgsym
         with:
-          artifacts-dir: ./${{ matrix.suite }}-${{ matrix.arch }}
+          artifacts-dir: ./${{ matrix.suite }}-arm64
           before-build-hook: apt-get update && apt-get install -y devscripts && cd ./prismlauncher && dch -D ${{ matrix.suite }} --local ~${{ matrix.suite }} ""
           buildpackage-opts: --build=binary
           docker-image: ubuntu:${{ matrix.suite }}
@@ -229,39 +227,90 @@ jobs:
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
       - name: Sign package
-        run: sudo chmod -Rv 777 ./${{ matrix.suite }}-${{ matrix.arch }} && debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-${{ matrix.arch }}/*.changes
+        run: sudo chmod -Rv 777 ./${{ matrix.suite }}-arm64 && debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-arm64/*.changes
   commit:
-    name: Upload ${{ matrix.suite }} packge for ${{ matrix.arch }} to repository
+    name: Upload packges to repository
     runs-on: ubuntu-latest
     needs: [build-debian-x86, build-debian-arm, build-ubuntu-x86, build-ubuntu-arm]
-    strategy:
-      max-parallel: 1
-      matrix:
-        suite:
-          - bookworm
-          - noble
-          - trixie
-          - plucky
-          - questing
-# no forky yet, missing Adoptium repo
-#          - forky
-        arch: [amd64, arm64]
     steps:
       - name: Checkout repo
         uses: actions/checkout@v6
         with:
           ref: repo
           path: ./repo
-      - name: Get packge from cache
+      - name: Get bookworm packge for amd64 from cache
         uses: actions/cache@v4
         with:
-          path: ./${{ matrix.suite }}-${{ matrix.arch }}
-          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.suite }}-${{ matrix.arch }}
+          path: ./bookworm-amd64
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-bookworm-amd64
+      - name: Get bookworm packge for arm64 from cache
+        uses: actions/cache@v4
+        with:
+          path: ./bookworm-arm64
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-bookworm-arm64
           enableCrossOsArchive: true
-      - name: Include package in repo
-        run: reprepro -Vb ./repo include ${{ matrix.suite }} ./${{ matrix.suite }}-${{ matrix.arch }}/*.changes
+      - name: Get noble packge for amd64 from cache
+        uses: actions/cache@v4
+        with:
+          path: ./noble-amd64
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-noble-amd64
+      - name: Get noble packge for arm64 from cache
+        uses: actions/cache@v4
+        with:
+          path: ./noble-arm64
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-noble-arm64
+          enableCrossOsArchive: true
+      - name: Get plucky packge for amd64 from cache
+        uses: actions/cache@v4
+        with:
+          path: ./plucky-amd64
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-plucky-amd64
+      - name: Get plucky packge for arm64 from cache
+        uses: actions/cache@v4
+        with:
+          path: ./plucky-arm64
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-plucky-arm64
+          enableCrossOsArchive: true
+      - name: Get trixie packge for amd64 from cache
+        uses: actions/cache@v4
+        with:
+          path: ./trixie-amd64
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-trixie-amd64
+      - name: Get trixie packge for arm64 from cache
+        uses: actions/cache@v4
+        with:
+          path: ./trixie-arm64
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-trixie-arm64
+          enableCrossOsArchive: true
+      - name: Get questing packge for amd64 from cache
+        uses: actions/cache@v4
+        with:
+          path: ./questing-amd64
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-questing-amd64
+      - name: Get questing packge for arm64 from cache
+        uses: actions/cache@v4
+        with:
+          path: ./questing-arm64
+          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-questing-arm64
+          enableCrossOsArchive: true
+#      - name: Get forky packge for amd64 from cache
+#        uses: actions/cache@v4
+#        with:
+#          path: ./forky-amd64
+#          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-forky-amd64
+#      - name: Get forky packge for arm64 from cache
+#        uses: actions/cache@v4
+#        with:
+#          path: ./forky-arm64
+#          key: cache-${{ github.run_id }}-${{ github.run_attempt }}-forky-arm64
+#          enableCrossOsArchive: true
+      - name: Install reprepro
+        run: sudo apt-get update && sudo apt-get -y install reprepro
+      - name: Include packages in repo
+#        run: for suite in bookworm noble plucky trixie questing forky; do for arch in amd64 arm64; do reprepro -Vb ./repo include "$suite" "./${suite}-${arch}/*.changes"; done; done
+        run: for suite in bookworm noble plucky trixie questing; do for arch in amd64 arm64; do reprepro -Vb ./repo include "$suite" "./${suite}-${arch}/*.changes"; done; done
       - name: Commit changes to repo
         uses: EndBug/add-and-commit@v9
         with:
           cwd: ./repo
-          message: Upload ${{ matrix.suite }} packge for ${{ matrix.arch }}
+          message: Upload new packages

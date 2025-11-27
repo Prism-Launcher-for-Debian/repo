@@ -75,7 +75,7 @@ jobs:
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
       - name: Sign package
-        run: debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-${{ matrix.arch }}/*.changes
+        run: sudo chmod -Rv 777 ./${{ matrix.suite }}-${{ matrix.arch }} && debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-${{ matrix.arch }}/*.changes
   build-debian-arm:
     name: Build for ${{ matrix.suite }} on arm64
     runs-on: ubuntu-24.04-arm
@@ -150,7 +150,7 @@ jobs:
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
       - name: Sign package
-        run: debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-${{ matrix.arch }}/*.changes
+        run: sudo chmod -Rv 777 ./${{ matrix.suite }}-${{ matrix.arch }} && debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-${{ matrix.arch }}/*.changes
   build-ubuntu-x86:
     name: Build for ${{ matrix.suite }} on amd64
     runs-on: ubuntu-latest
@@ -189,7 +189,7 @@ jobs:
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
       - name: Sign package
-        run: debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-${{ matrix.arch }}/*.changes
+        run: sudo chmod -Rv 777 ./${{ matrix.suite }}-${{ matrix.arch }} && debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-${{ matrix.arch }}/*.changes
   build-ubuntu-arm:
     name: Build for ${{ matrix.suite }} on arm64
     runs-on: ubuntu-24.04-arm
@@ -229,7 +229,7 @@ jobs:
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
       - name: Sign package
-        run: debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-${{ matrix.arch }}/*.changes
+        run: sudo chmod -Rv 777 ./${{ matrix.suite }}-${{ matrix.arch }} && debsign -k${{ steps.importkey.outputs.fingerprint }} ./${{ matrix.suite }}-${{ matrix.arch }}/*.changes
   commit:
     name: Upload ${{ matrix.suite }} packge for ${{ matrix.arch }} to repository
     runs-on: ubuntu-latest

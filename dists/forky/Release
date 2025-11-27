@@ -2,7 +2,7 @@ Origin: PrismLauncher
 Label: PrismLauncher
 Suite: testing
 Codename: forky
-Date: Thu, 27 Nov 2025 00:55:38 UTC
+Date: Thu, 27 Nov 2025 01:52:38 UTC
 Architectures: amd64 arm64
 Components: main
 Description: Prism Launcher repository for Debian and Ubuntu

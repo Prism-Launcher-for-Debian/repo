@@ -9,11 +9,10 @@ jobs:
       matrix:
         suite:
           - bookworm
-#          - trixie
+          - trixie
 # no forky yet, missing Adoptium repo
 #          - forky
-#        arch: [i386 amd64 armhf arm64]
-        arch: [arm64]
+        arch: [i386 amd64 armhf arm64]
     steps:
       - name: Checkout prismlauncher packaging
         run: git clone --branch debian/unstable https://salsa.debian.org/BenTheTechGuy/prismlauncher.git
@@ -87,10 +86,9 @@ jobs:
       matrix:
         suite:
           - noble
-#          - plucky
-#          - questing
-#        arch: [i386 amd64 armhf arm64]
-        arch: [arm64]
+          - plucky
+          - questing
+        arch: [i386 amd64 armhf arm64]
     steps:
       - name: Checkout prismlauncher packaging
         run: git clone --branch debian/unstable https://salsa.debian.org/BenTheTechGuy/prismlauncher.git
@@ -142,7 +140,7 @@ jobs:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
       - name: Include packages in repo
 #        run: for suite in bookworm noble plucky trixie questing forky; do for arch in i386 amd64 armhf arm64; do reprepro -Vb ./repo include "$suite" "./${suite}-${arch}/"*.changes; done; done
-        run: for suite in bookworm noble; do for arch in arm64; do reprepro -Vb ./repo include "$suite" "./${suite}-${arch}/"*.changes; done; done
+        run: for suite in bookworm noble plucky trixie questing; do for arch in i386 amd64 armhf arm64; do reprepro -Vb ./repo include "$suite" "./${suite}-${arch}/"*.changes; done; done
       - name: Commit changes to repo
         uses: EndBug/add-and-commit@v9
         with:

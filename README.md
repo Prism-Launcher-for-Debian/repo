@@ -14,7 +14,7 @@ apt update && apt install prismlauncher
 ```
 Codename: trixie
 Suite: stable
-Architectures: amd64 arm64
+Architectures: i386 amd64 armhf arm64
 Components: main
 SignWith: AE237E5508F8CBD562E49CA6D6857C60C62A5951
 Origin: PrismLauncher

@@ -3,8 +3,7 @@ Hash: SHA512
 
 Origin: PrismLauncher
 Label: PrismLauncher
-Suite: testing
-Codename: forky
+Codename: noble
 Date: Thu, 27 Nov 2025 00:55:38 UTC
 Architectures: amd64 arm64
 Components: main
@@ -12,37 +11,37 @@ Description: Prism Launcher repository for Debian and Ubuntu
 MD5Sum:
  d41d8cd98f00b204e9800998ecf8427e 0 main/binary-amd64/Packages
  7029066c27ac6f5ef18d660d5741979a 20 main/binary-amd64/Packages.gz
- a5465004e6cf7dd69fc8fed665d1ffa2 157 main/binary-amd64/Release
+ a850adc6f017d9f3d99332305aa0be7f 140 main/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 main/binary-arm64/Packages
  7029066c27ac6f5ef18d660d5741979a 20 main/binary-arm64/Packages.gz
- 4d11ed9183368d2da72673d1ef97df37 157 main/binary-arm64/Release
+ 6d08b9924d19767a3be001868f6b8707 140 main/binary-arm64/Release
 SHA1:
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-amd64/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-amd64/Packages.gz
- 95d8d930180112f72cb9af6d239a6b0c045e04f7 157 main/binary-amd64/Release
+ 869c4ecdf79c6ff1d924e8143c525ea2c2152adc 140 main/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-arm64/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-arm64/Packages.gz
- b67e5b3939424c9889a309fab4adffe82461bfda 157 main/binary-arm64/Release
+ 8543c836cb59b131f8f295beecf5951744b098f3 140 main/binary-arm64/Release
 SHA256:
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-amd64/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-amd64/Packages.gz
- cdc01715bbdc54754c0c46ae5229ffd78175dbfd82c7e1f05dfc5d2deb5cfe70 157 main/binary-amd64/Release
+ a1bc7606ddeeff9539ec020067b90b5c248441d7227b6f544bbd958af47988c7 140 main/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-arm64/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-arm64/Packages.gz
- 3a0d45387a9a23773d09f6027cd2ecae51c33d7cc103af84c049bfbc78c0d706 157 main/binary-arm64/Release
+ 37a2cb63323a5c15e512ed9ccf4e81a19273d39fd3d4a59e6343f6ee92003046 140 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCgAdFiEEriN+VQj4y9Vi5Jym1oV8YMYqWVEFAmknoYoACgkQ1oV8YMYq
-WVEwQBAAqTGs/1Ednn1lRtXLLWHCzmd87/pEg4O5R7XzbIx5QdxUr9muaEpuZ2qY
-sRLC8lWThy2/1KywXUG+H780ZT4M6V7LLkx0/WbrIKz4bCcl+Ii6BYrW/2Vv1vJt
-8PjUBLghPT9v25tZFvfonGorHjcQtTBaZ18dvc174jpLbHLLW7j7UzNDAJzeexbF
-Zw5W7DzyxM/qKYUen42YEY4rKpjI/LMvhnl95JFcFp0R8SmB2/AXm00LICKAk05J
-t6TjC4Z1Dif1rlnHBKmyNFxaFv+eswtzeXqkNXuQqCql3EyljksIm5KBtdr7a/Y+
-z06ONM9OWKHwotLxaC4QdV8t7+L2ojtygXV82CPkpQXhynq+53tnL6W4Ul55oLQx
-tgY2JLHQhCM3XkAtvEAeLFY3dq60nygiC3Lkpso5ECCPHqAtZkflZEe7QfVCuOC4
-tPtI29YvMEA435C61Ry6zk52aYoBr4D5NaoslmK68OUOuhjBmWqbCvKPjw5sVmXn
-V6K8+vgrkpAx7iLtVGmaWYku2OPL4pyNCebusAg5Nd0JkmXKY9nqX+9NjncL0jrF
-flZy+SUnFa8EvDuE3rn4FvbkDe6DqXPZMUrYPZ6G1rFPl1jQ2FrpO9nqctxzGw/O
-P6Wwuafw4w9B+UriJ/HPDBWT/oJU+fDG5k62SDjhtCMaTtL8sTw=
-=ofz/
+WVEgIw/+JRzv1qYgYBmET1vFxp7PtvUXc8pa0gCdF6gRT+Ecuqrb7tDDy+y80+8/
+wWANjwtTfMLuVu85DHUYXuLj9yjnKJ5KvCJCeq4th3u9loE9OMCY3wNStZbODExZ
+Sf+E+TDNxg3VEBQSFcDLPXFcwNyg6kqzjFZGuImHeLQjltzqXBiCAEI+tcxXJTCN
+A6uVO/Ma8SQ4G6wKMb5crfaAKFnvGJCeg8Gr+XEf7cCf5/leGh0it93r9i+C6y0+
+ORttv0YiJSnAB1+gIdm+Q5pWhBAi0ehG3NBtXB+GVH8kb+zQz2ajdysfOiI27mRS
+oLdhKeOHZabX7fI/0Wg4SRJcMW+7kBUnJk9L7mWhtWl6CK2m/fq/N40akHRNAfZx
+gSA132RCqt3xQZtTLjmi+P3C0LVb6GTm5T/jZ45qH4uO22aLu9xDyH9q3/pIC5gs
+fpLslmK9VdO2bggg/MtcCOB8qp3Rh/dV758ZNLnnkSd3e5NlmpD4vOGp14NaGn5R
+GGS1YD6Orw2ZyEs3WyTN0mqB1sT62hVUbdkrveL7P8gfbJKL7NrSqZQ81oc8Zt05
+kugtv6odCS2LCzYPU4ej5L8jLkRXVdki0jeDf32vrQs/p7Pipipb82wTZEzxR6wq
+zmbvVAry5uDeSuO1i6FCjjg2RrXFHqy/ctL4B14047HAcZtpOuU=
+=X9LI
 -----END PGP SIGNATURE-----

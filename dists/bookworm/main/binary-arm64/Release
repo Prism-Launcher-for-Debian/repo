@@ -1,5 +1,5 @@
-Archive: stable
-Component: contrib
+Archive: oldstable
+Component: main
 Origin: PrismLauncher
 Label: PrismLauncher
 Architecture: arm64

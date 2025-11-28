@@ -1,20 +1,20 @@
 Package: prismlauncher
-Version: 9.4+ds-1~noble1
+Version: 9.4+ds-2~noble1
 Architecture: amd64
 Maintainer: Ben Westover <me@benthetechguy.net>
 Installed-Size: 12177
-Depends: libc6 (>= 2.38), libcmark0.30.2 (>= 0.30.2), libgcc-s1 (>= 3.3.1), libqt6core5compat6 (>= 6.2.1), libqt6core6t64 (>= 6.4.0), libqt6gui6t64 (>= 6.4.0), libqt6network6t64 (>= 6.4.0), libqt6networkauth6 (>= 6.2.1), libqt6widgets6t64 (>= 6.3.0), libqt6xml6t64 (>= 6.1.2), libquazip1-qt6-1t64 (>= 1.4), libstdc++6 (>= 13.1), libtomlplusplus3t64 (>= 3.2.0), zlib1g (>= 1:1.1.4)
-Recommends: default-jre | java-runtime (>= 21)
-Suggests: libglfw3-wayland, openjdk-8-jre | java-runtime (= 8), openjdk-17-jre | java-runtime (= 17)
+Depends: libc6 (>= 2.38), libcmark0.30.2 (>= 0.30.2), libgcc-s1 (>= 3.3.1), libqt6core5compat6 (>= 6.2.1), libqt6core6t64 (>= 6.4.0), libqt6gui6t64 (>= 6.4.0), libqt6network6t64 (>= 6.4.0), libqt6networkauth6 (>= 6.2.1), libqt6widgets6t64 (>= 6.3.0), libqt6xml6t64 (>= 6.1.2), libquazip1-qt6-1t64 (>= 1.4), libstdc++6 (>= 13.1), libtomlplusplus3t64 (>= 3.2.0), zlib1g (>= 1:1.1.4), libqt6svg6, qt6-image-formats-plugins
+Recommends: default-jre | java-runtime (>= 21), flite, x11-xserver-utils
+Suggests: libglfw3-wayland, gamemode, mangohud, openjdk-8-jre | java-runtime (= 8), openjdk-17-jre | java-runtime (= 17)
 Provides: multimc, polymc
 Homepage: https://prismlauncher.org
 Priority: optional
 Section: contrib/games
-Filename: pool/main/p/prismlauncher/prismlauncher_9.4+ds-1~noble1_amd64.deb
-Size: 5268684
-SHA256: f9e22bfa57882db9d8bc2ae85697d4924226937fc233534c13ce4a362b5f2dfd
-SHA1: 32cabfedf71e4c45ac9f9b80da16e57ac74317a2
-MD5sum: 587a1dc699b7364dda165488449a9d5a
+Filename: pool/main/p/prismlauncher/prismlauncher_9.4+ds-2~noble1_amd64.deb
+Size: 5268792
+SHA256: 4a0643cf161f30469c4c309d67eead7e11d85f088f5f8a15e7c60ba74dff96c0
+SHA1: b74fbc01d89df562fdd428e868fcae662db68655
+MD5sum: 5e7013a12d6b0e30dbc696b0120b0dab
 Description: FOSS Minecraft launcher supporting multiple instances and accounts
  Prism Launcher is a custom launcher for Minecraft that allows users to
  create multiple instances and use multiple accounts. As a fork of the

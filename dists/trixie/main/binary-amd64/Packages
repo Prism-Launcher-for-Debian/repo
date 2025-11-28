@@ -1,20 +1,20 @@
 Package: prismlauncher
-Version: 9.4+ds-1~bpo13+1
+Version: 9.4+ds-2~bpo13+1
 Architecture: amd64
 Maintainer: Ben Westover <me@benthetechguy.net>
 Installed-Size: 14077
-Depends: libc6 (>= 2.38), libcmark0.30.2 (>= 0.30.2), libgcc-s1 (>= 3.0), libqt6core5compat6 (>= 6.6.0), libqt6core6t64 (>= 6.8.2), libqt6gui6 (>= 6.4.0), libqt6network6 (>= 6.7.2), libqt6networkauth6 (>= 6.6.1), libqt6widgets6 (>= 6.3.0), libqt6xml6 (>= 6.1.2), libquazip1-qt6-1t64 (>= 1.4), libstdc++6 (>= 14), libtomlplusplus3t64 (>= 3.2.0), zlib1g (>= 1:1.1.4)
-Recommends: default-jre | java-runtime (>= 21)
-Suggests: libglfw3-wayland, openjdk-8-jre | java-runtime (= 8), openjdk-17-jre | java-runtime (= 17)
+Depends: libc6 (>= 2.38), libcmark0.30.2 (>= 0.30.2), libgcc-s1 (>= 3.0), libqt6core5compat6 (>= 6.6.0), libqt6core6t64 (>= 6.8.2), libqt6gui6 (>= 6.4.0), libqt6network6 (>= 6.7.2), libqt6networkauth6 (>= 6.6.1), libqt6widgets6 (>= 6.3.0), libqt6xml6 (>= 6.1.2), libquazip1-qt6-1t64 (>= 1.4), libstdc++6 (>= 14), libtomlplusplus3t64 (>= 3.2.0), zlib1g (>= 1:1.1.4), libqt6svg6, qt6-image-formats-plugins
+Recommends: default-jre | java-runtime (>= 21), flite, x11-xserver-utils
+Suggests: libglfw3-wayland, gamemode, mangohud, openjdk-8-jre | java-runtime (= 8), openjdk-17-jre | java-runtime (= 17)
 Provides: multimc, polymc
 Homepage: https://prismlauncher.org
 Priority: optional
 Section: contrib/games
-Filename: pool/main/p/prismlauncher/prismlauncher_9.4+ds-1~bpo13+1_amd64.deb
-Size: 5455436
-SHA256: 8e0a012ba1061d1824a4e10e29330b4eca8c4c916112b1e53ca89bc21e83e55c
-SHA1: 2a6486af9c7b92cabfd1b56cd0a789f6b448dfa2
-MD5sum: 706a54e58cf35954086bb8566d7a8a6f
+Filename: pool/main/p/prismlauncher/prismlauncher_9.4+ds-2~bpo13+1_amd64.deb
+Size: 5452488
+SHA256: 90ef77ef29882244116db2f4e84c9bc799bdebca2ece67342ea14668549804ea
+SHA1: d6f8cbeaa3818534c88eadcf644ffb0c4508feae
+MD5sum: d6510fe6fd765130fc2197d3836ef27d
 Description: FOSS Minecraft launcher supporting multiple instances and accounts
  Prism Launcher is a custom launcher for Minecraft that allows users to
  create multiple instances and use multiple accounts. As a fork of the

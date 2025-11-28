@@ -4,44 +4,44 @@ Hash: SHA512
 Origin: PrismLauncher
 Label: PrismLauncher
 Codename: noble
-Date: Thu, 27 Nov 2025 20:07:55 UTC
+Date: Fri, 28 Nov 2025 06:28:11 UTC
 Architectures: amd64 arm64
 Components: main
 Description: Prism Launcher repository for Debian and Ubuntu
 MD5Sum:
- e55eb49a5eec3f75f7c1e2ff7081378a 1317 main/binary-amd64/Packages
- faa8014b36f5f3fe1f9d6c3a886e5594 751 main/binary-amd64/Packages.gz
+ d7db98223781e95c927dc24f353af9a8 1402 main/binary-amd64/Packages
+ 7de14ec9ba0ce0e50a5da72ffb19fc24 802 main/binary-amd64/Packages.gz
  a850adc6f017d9f3d99332305aa0be7f 140 main/binary-amd64/Release
- 4c20c70d409942c8a01d4b0da1c3baaf 1317 main/binary-arm64/Packages
- 070f411bad951ed98c040b551d81f083 752 main/binary-arm64/Packages.gz
+ 3580311535ad6af411108f6dcdb08200 1402 main/binary-arm64/Packages
+ 17e2c309edb2c810055b7b26171444fb 800 main/binary-arm64/Packages.gz
  6d08b9924d19767a3be001868f6b8707 140 main/binary-arm64/Release
 SHA1:
- 4d0c50475e348bab0f6386ef4be42c52e0a57325 1317 main/binary-amd64/Packages
- 3e6d5a3fd6b247574be96d1033ef6da219f39563 751 main/binary-amd64/Packages.gz
+ fbd712615f4c9a86c7509d5150be4e56d481838c 1402 main/binary-amd64/Packages
+ 40c62ee5272a09e1e0df7f093bf2ae546b4ba23c 802 main/binary-amd64/Packages.gz
  869c4ecdf79c6ff1d924e8143c525ea2c2152adc 140 main/binary-amd64/Release
- cbb663ac0c39ba6f20bedfb97f0e555b41b2b239 1317 main/binary-arm64/Packages
- db3659e62ebfe8b3a0ff0cbf054cd7cb35621e54 752 main/binary-arm64/Packages.gz
+ 05e54912a310509089a08da4133d36179faf1c43 1402 main/binary-arm64/Packages
+ f1dcf6748fd67ea39ed767b4c5bf24605f6614d4 800 main/binary-arm64/Packages.gz
  8543c836cb59b131f8f295beecf5951744b098f3 140 main/binary-arm64/Release
 SHA256:
- b77aa3c09fc12bdcc71d8334489b73aa0152b5c8a7cd6b83e26c8301d2eaee8c 1317 main/binary-amd64/Packages
- 616bd107de4c956eb6e1a16b7a528be1869bcce8a400dc76c56f73b3793775b0 751 main/binary-amd64/Packages.gz
+ dd5cbb787a801cdd8854c07ed9c822ce0589ff4e1b254e0ec4a1d10f91c5aaeb 1402 main/binary-amd64/Packages
+ 8bc024197739da10400302dc82b874458d215b57d8525ca9b5665dfe7ed728aa 802 main/binary-amd64/Packages.gz
  a1bc7606ddeeff9539ec020067b90b5c248441d7227b6f544bbd958af47988c7 140 main/binary-amd64/Release
- dfa2864c2c6b51c6860e572ea3cee96854736e3e89b5cfd6d988eac9f3e58b44 1317 main/binary-arm64/Packages
- a9fe5bd3b3f8f28e7e9c1b460d808e7041a1c8ec784e1df3eed05bb501c975ec 752 main/binary-arm64/Packages.gz
+ dacab7a7d1f0ce58afb7639bcffff192e22b9fa148f043e16c849004a571fcfd 1402 main/binary-arm64/Packages
+ 57526987aec0e247b55fd42da79e0cc01c58b6924b090dd5f50b9f42f522feed 800 main/binary-arm64/Packages.gz
  37a2cb63323a5c15e512ed9ccf4e81a19273d39fd3d4a59e6343f6ee92003046 140 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEriN+VQj4y9Vi5Jym1oV8YMYqWVEFAmkor5sACgkQ1oV8YMYq
-WVHr3g//XppQ2o7b5ys8l/QTmENOH4NFZXKIBmDGpHqxEDlvOwbrypvRvwWEiO9k
-LCW5k+wDO9Zv2+I7cuP824KwR7BzEQojS0Nv4b7cyyVDkAeoB89Ns+pVzdlxzMMI
-Z6j9olfBaAZAvyShoarb8kWDW3FE6e1G3T9mdC+E3834UZ6Qp21E+z3Hcy97lU0i
-jJ0gPC82tCVDSJOv6+VPtq0hchKTgw4uPgQ8Q5IDUdXH/Oxq+nliVOFD15GnhCCY
-Zmvmp8TFvncUC8B6rkGB7d751ivTOSilVbzvEtl66+rr7Uz8BdD6JXUJkdTk0vR9
-0ucPEVE0/jxbvjxtGDTkDHpzT3pJ3TV4HPiS1aOrqcFmQFAPGHgL3u2LyymN68G7
-Mh9EW9yEeknLz90KEPHPK0I+AinVITvI/I5qZiChk/oE7KNK82Q44Ui1oeaBZjr9
-WNXq+UXOZZguW34Xci28riIWiPAFgphYfhPo9h/U2ENl5J++A6nzFN8k5jYamSLS
-/RhzbQNQEWxuBcTrqwVcC8eQXW4GkIHNU/rrs62q5pjJ+rmLyG+6okLgXCYemOAu
-V3fxhr+2Ubvj2G5mYh9hUzmCP5u+8i92y0Vo5xqcObQWU2ba/rkAeOznyrV5kcqA
-DXx8+Ff6B4156CvaWmAk1gIwzBdEZ1GsvT1+DbHJ5Zq0iSKjKLI=
-=KlBZ
+iQIzBAEBCgAdFiEEriN+VQj4y9Vi5Jym1oV8YMYqWVEFAmkpQPsACgkQ1oV8YMYq
+WVHJuhAApZF2kfLVXei7LH6r7S/X3BhnqQn79maj328XyB5/hiztajqCuRJm7D1I
+lAZLd5DgeOsBLJpgHanXL2v5Xz+79ONvrc50KR+bG3QB6G/W4KX+MMlv28KZrPGn
+Z+kAtv0VBahWD4jV/sTroe6wqhthrixXgaQSzzaRtI6UrHlek14b3VXIkgeavou6
++4v0qHtThBe8O1TlfpqdT0+iG9nigmyY4bftZ4yRd4j7pvR+afVibpFHvu8L67N3
+1avz2YwwyIkm20+ioYhAM+x8bZdftWWLsaQ5R9dn1K3XHAGiw57iZEFedNA3ozpD
+qm8v9zfGPgnlNldKwmG+rDk3WiK4E8wGSulkfkjHDtIV7hOI/wq1PIGoD0XB8oMS
+KJsC3l1yEyopcGrq+LC8oC9qxnWAhNyMmfrQpbN2d+4/BNy3Ccf8e1jQp5mluu1u
+vlD7E/a+fu2eftDjifVrh0QKQdvjVBZsO5FFWjTLMQAqoOfvHdzXhxznZQMfHyOZ
+FHcjKjnN1ecCforJdfEe0bkj+NlxY+oH6XJTBI3k/jNa/XX1yKsFFc5hDTlnEmlD
+0+WoUYP0TwDumXcdFEtKMH5PZDZfrjQJmJBttlr9IlAb4JzEga8M2jj0e9JZK7Jg
+XitiGVAG1yCJr3N/wV21S6c2S9UVUDDuNUejNHN7o3ygKzY9p1A=
+=anim
 -----END PGP SIGNATURE-----

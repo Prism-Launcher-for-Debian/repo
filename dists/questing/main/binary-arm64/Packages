@@ -1,20 +1,20 @@
 Package: prismlauncher
-Version: 9.4+ds-1~questing1
+Version: 9.4+ds-2~questing1
 Architecture: arm64
 Maintainer: Ben Westover <me@benthetechguy.net>
 Installed-Size: 11906
-Depends: libc6 (>= 2.38), libcmark0.30.2 (>= 0.30.2), libgcc-s1 (>= 3.3.1), libqt6core5compat6 (>= 6.6.0), libqt6core6t64 (>= 6.9.1), libqt6gui6 (>= 6.9.1), libqt6network6 (>= 6.7.2), libqt6networkauth6 (>= 6.9.1), libqt6widgets6 (>= 6.3.0), libqt6xml6 (>= 6.1.2), libquazip1-qt6-1t64 (>= 1.5), libstdc++6 (>= 14), libtomlplusplus3t64 (>= 3.2.0), zlib1g (>= 1:1.1.4)
-Recommends: default-jre | java-runtime (>= 21)
-Suggests: libglfw3-wayland, openjdk-8-jre | java-runtime (= 8), openjdk-17-jre | java-runtime (= 17)
+Depends: libc6 (>= 2.38), libcmark0.30.2 (>= 0.30.2), libgcc-s1 (>= 3.3.1), libqt6core5compat6 (>= 6.6.0), libqt6core6t64 (>= 6.9.1), libqt6gui6 (>= 6.9.1), libqt6network6 (>= 6.7.2), libqt6networkauth6 (>= 6.9.1), libqt6widgets6 (>= 6.3.0), libqt6xml6 (>= 6.1.2), libquazip1-qt6-1t64 (>= 1.5), libstdc++6 (>= 14), libtomlplusplus3t64 (>= 3.2.0), zlib1g (>= 1:1.1.4), libqt6svg6, qt6-image-formats-plugins
+Recommends: default-jre | java-runtime (>= 21), flite, x11-xserver-utils
+Suggests: libglfw3-wayland, gamemode, mangohud, openjdk-8-jre | java-runtime (= 8), openjdk-17-jre | java-runtime (= 17)
 Provides: multimc, polymc
 Homepage: https://prismlauncher.org
 Priority: optional
 Section: contrib/games
-Filename: pool/main/p/prismlauncher/prismlauncher_9.4+ds-1~questing1_arm64.deb
-Size: 5191988
-SHA256: 661f1c701ce918cab741cecab776b54d142c942e52d32c0e0c3dfe8651942789
-SHA1: e8e98d36e6623b6c6c756cad5b4aeb91b615112d
-MD5sum: ccbbeb056579a034b4ecb27e2e808ec4
+Filename: pool/main/p/prismlauncher/prismlauncher_9.4+ds-2~questing1_arm64.deb
+Size: 5192456
+SHA256: 6bf07f2c5880b97fa2dc12a451b86c1f3864636042cb6917cf297f8f5ed91643
+SHA1: b1b925adf711e90c9c2c74165d4ae036b40b837f
+MD5sum: 62dc5852f0fe3307714d9fabaabb017e
 Description: FOSS Minecraft launcher supporting multiple instances and accounts
  Prism Launcher is a custom launcher for Minecraft that allows users to
  create multiple instances and use multiple accounts. As a fork of the

@@ -1,11 +1,15 @@
 # PrismLauncher Debian Repository
 ## How to use
-Run the following commands as root:
+Run the following command:
+```bash
+sudo wget https://prism-launcher-for-debian.github.io/repo/prismlauncher.gpg -O /usr/share/keyrings/prismlauncher-archive-keyring.gpg \
+  && echo "deb [signed-by=/usr/share/keyrings/prismlauncher-archive-keyring.gpg] https://prism-launcher-for-debian.github.io/repo $(. /etc/os-release; echo "${UBUNTU_CODENAME:-${DEBIAN_CODENAME:-${VERSION_CODENAME}}}") main" | sudo tee /etc/apt/sources.list.d/prismlauncher.list \
+  && sudo apt update \
+  && sudo apt install prismlauncher
 ```
-wget https://Prism-Launcher-for-Debian.github.io/repo/prismlauncher.gpg -O /usr/share/keyrings/prismlauncher-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/prismlauncher-archive-keyring.gpg] https://Prism-Launcher-for-Debian.github.io/repo `. /etc/os-release; echo $VERSION_CODENAME` main" > /etc/apt/sources.list.d/prismlauncher.list
-apt update && apt install prismlauncher
-```
+
+This supports Debian, Ubuntu, Linux Mint, and most derivatives. x86-64 and ARM64 are supported.
+
 ## How to set up your own repo
 1. Create a new PGP key for the repository
 2. Clone this branch of this GitHub repo

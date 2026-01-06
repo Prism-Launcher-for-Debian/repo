@@ -8,7 +8,8 @@ jobs:
     strategy:
       matrix:
         suite:
-          - bookworm
+# temporarily disable bookworm due to dependency mismatch
+#          - bookworm
           - trixie
 # no forky yet, missing Adoptium repo
 #          - forky

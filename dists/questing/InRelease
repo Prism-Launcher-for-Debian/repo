@@ -4,44 +4,44 @@ Hash: SHA512
 Origin: PrismLauncher
 Label: PrismLauncher
 Codename: questing
-Date: Fri, 28 Nov 2025 06:28:12 UTC
+Date: Tue, 06 Jan 2026 07:37:02 UTC
 Architectures: amd64 arm64
 Components: main
 Description: Prism Launcher repository for Debian and Ubuntu
 MD5Sum:
- 1cbd3e017b63568d19f3dd9316a4f862 1394 main/binary-amd64/Packages
- dc47a2affab4142b34c7c691137ea097 806 main/binary-amd64/Packages.gz
+ 19ec30af8277e65667ddc84370404aa8 1455 main/binary-amd64/Packages
+ 3a445271977cbdfaf5e977ef1c24f803 817 main/binary-amd64/Packages.gz
  a850adc6f017d9f3d99332305aa0be7f 140 main/binary-amd64/Release
- 6578c74aacc55ef1968507905da19d0e 1394 main/binary-arm64/Packages
- 939965fff006f2603eabcf1643569b02 808 main/binary-arm64/Packages.gz
+ 81e82440c03b12c52d0d4db1c27198c9 1455 main/binary-arm64/Packages
+ 0d7a5378d9797a3b9a0ff5a2b0e5b46b 817 main/binary-arm64/Packages.gz
  6d08b9924d19767a3be001868f6b8707 140 main/binary-arm64/Release
 SHA1:
- 54ed25a9934bc2c962047667f1c2abc2537e8744 1394 main/binary-amd64/Packages
- 20734997b4d9d8b416eda9b4ed2018860d760a6a 806 main/binary-amd64/Packages.gz
+ ee13ff36c6431f2f2c8fae262af97abfe24be78e 1455 main/binary-amd64/Packages
+ d956ebc3c2457fc8b212712c7c87a728f4ba18e3 817 main/binary-amd64/Packages.gz
  869c4ecdf79c6ff1d924e8143c525ea2c2152adc 140 main/binary-amd64/Release
- 7c43f56604d6b97b638138f8eb01fb36d17adb39 1394 main/binary-arm64/Packages
- ba48ceab33f4dec2cba03824d7cc0e50926700c6 808 main/binary-arm64/Packages.gz
+ 219fe9db71797d2aad184fa9a18a9c12e2a82334 1455 main/binary-arm64/Packages
+ 0f4f81e9ffbbd7da92e718f4a13b81ba5100a98e 817 main/binary-arm64/Packages.gz
  8543c836cb59b131f8f295beecf5951744b098f3 140 main/binary-arm64/Release
 SHA256:
- 68b0f2a791beddd4e31981baac3e7a77177ea67fc8b3a6d6548df0e0642253d3 1394 main/binary-amd64/Packages
- 684550a8a6336b138c976ffa01ac78aff8fe085d9ed376c1e755336f97b1feeb 806 main/binary-amd64/Packages.gz
+ 525d087d44b299a7c6ff6e45076135137d28f63b425bab3fef83c56c316b70a5 1455 main/binary-amd64/Packages
+ a091e2b64075ec0eec53efc89c66c00cec35dd148adee595a6fd3102d81599a6 817 main/binary-amd64/Packages.gz
  a1bc7606ddeeff9539ec020067b90b5c248441d7227b6f544bbd958af47988c7 140 main/binary-amd64/Release
- ef244d329204bb0416522bd1e753e8e2b80f89b088d5be935b7221a83137700b 1394 main/binary-arm64/Packages
- e8fd2c0730e71893177a95a9ef71633a9741f347c75cfad59cd121c301621117 808 main/binary-arm64/Packages.gz
+ 68d0697108e22c682a5f93ee23c232ebe0069141f9005132ce5209c546a796fa 1455 main/binary-arm64/Packages
+ af694ce790fafe097d38795c7f1fd6c2f8e24d5103ebef5afc36dd171990b478 817 main/binary-arm64/Packages.gz
  37a2cb63323a5c15e512ed9ccf4e81a19273d39fd3d4a59e6343f6ee92003046 140 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEriN+VQj4y9Vi5Jym1oV8YMYqWVEFAmkpQPwACgkQ1oV8YMYq
-WVE+uhAAhq2Q/lk5rJIIcQ4lWxs/msTq8jZz6ZacPg/4ls6y+VcfoLtF1znQeNoi
-bNRut/j5IXBiYqHTuf3WW5evmgz/Du3o+AjD1/DGWzs7eUXo5RUC2UOEaVLVqcym
-FSrFLosS2mEOEhfexY9z9UgR2g28I/sTs4xFhg0HpzehU7HskAe22DBzqOAYAcaX
-8rYaAjgeqzJnYXnwJN0+0tdaIW8uks/An0cJywGfctFVrbYe9NB85gaKEMc4UVxL
-VHKNA9bdDqgsogG5ggSA7xO1cPyUei6SDbaVIzGOmnSyALKSXAFOgroOeoeNmih/
-4yjX1xlLjoMT5FTiekvITyPhA3DYqCaVTr7evqYRWZrsSsRHCzefTQKR8LJO5GT8
-NnxiD0gjOohfQuihpj67i2J3msuEQFHQvg13vvFHtqy/58LCGwFun+KffXDw1QAZ
-H3YxO95bXmWywsTIfEY6KH8k79E2gCkfIctc/Y8PNAVgpzKmhZqXmzgIT8JlVbUn
-XbrADLmmWCyYN8RPTuzJFrGoDQ/irwJt/MyqF6TeVjbteZZrRus4rL9f4hIQV8pY
-Yt0Vd+n6eI5R5Tydvrlu5j3g3ieD4ilvdZ8l86A6SiJ9YhUwjhUZUYu+Kr7SDrqt
-FlEEVdwv8HTLWO21yAoEI7hf4HMEeYnzskpvJfmn2r2eiLuaDZU=
-=djK8
+iQIzBAEBCgAdFiEEriN+VQj4y9Vi5Jym1oV8YMYqWVEFAmlcu54ACgkQ1oV8YMYq
+WVHKCg/7BHqlSgCWim5AcA1WB/ctXFo5jaayDeMx0fu0obbiuHsXD1Rv/6chXv8n
+DwdmgjO34b/3iRqL/7fUhhJhTeioa5MeTNGcQckv0ocdr1Q8V8NlFu4JiKodhZw2
+JQf9D/d768bPH0XZS4tZgOCYVyXikRGHNXnNnrSDytKd1/cSHoBfFrUF5Cnt0ZLE
+FnnyskcQFqdhQ2+agQpDGnyzKSG9U8WHzVmXY98vBAftzlOENJh7sTdxYbdGzCtT
+yMrym0wQmvcjoPFgsjVZPHssOVKHlVXB8IKPns5OOMRKOV777Y+EwfR0QD3hi3Bt
+IZsYwy2g78i9NjedOQ+cYIPh/VwmlGn2GAT8pZsgnv2aH1q56UZJnGcoTnAcfDv7
+NuW3+cyYxAN1drZNGRqi7rPJ7/aE9fEZWvtSeF+YaCKQsjkPv3axzHEFLvryo35e
+uip1QRcLgJ6mccjXdgBtYI+HuNsr6Q14u2nff58TQkw1iRtNCCU2oQWAMHnNSwxr
+kbI3KeHPIkx2lTs8NpjSOkw3Z55t/a+uDhsvd1zfy3/D0HkTUdGOCGYLBv22a2J9
+mluDey5dFuff22zPZhdgGyVirDJUL9eQdamS00/4E5bIBe9uE5jKdgTHsh4vrSfx
+1ADFvjAeW+CdiG9FqK4zKmI1XWG02FAVC9gLyD5M4G4rPCT8Ap8=
+=KnDx
 -----END PGP SIGNATURE-----

@@ -1,20 +1,20 @@
 Package: prismlauncher
-Version: 9.4+ds-2~bpo13+1
+Version: 10.0.0-1~bpo13+1
 Architecture: amd64
-Maintainer: Ben Westover <me@benthetechguy.net>
-Installed-Size: 14077
-Depends: libc6 (>= 2.38), libcmark0.30.2 (>= 0.30.2), libgcc-s1 (>= 3.0), libqt6core5compat6 (>= 6.6.0), libqt6core6t64 (>= 6.8.2), libqt6gui6 (>= 6.4.0), libqt6network6 (>= 6.7.2), libqt6networkauth6 (>= 6.6.1), libqt6widgets6 (>= 6.3.0), libqt6xml6 (>= 6.1.2), libquazip1-qt6-1t64 (>= 1.4), libstdc++6 (>= 14), libtomlplusplus3t64 (>= 3.2.0), zlib1g (>= 1:1.1.4), libqt6svg6, qt6-image-formats-plugins
+Maintainer: Ben Westover <bjw@debian.org>
+Installed-Size: 15442
+Depends: libarchive13t64 (>= 3.2.1), libc6 (>= 2.38), libcmark0.30.2 (>= 0.30.2), libgcc-s1 (>= 3.0), libqrencode4 (>= 3.2.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.4.0), libqt6gui6 (>= 6.4.0), libqt6network6 (>= 6.7.2), libqt6networkauth6 (>= 6.6.1), libqt6opengl6 (>= 6.1.2), libqt6widgets6 (>= 6.3.0), libqt6xml6 (>= 6.1.2), libstdc++6 (>= 14), libtomlplusplus3t64 (>= 3.2.0), zlib1g (>= 1:1.1.4), libqt6svg6, qt6-image-formats-plugins, qt6-wayland, mesa-utils, pciutils
 Recommends: default-jre | java-runtime (>= 21), flite, x11-xserver-utils
-Suggests: libglfw3-wayland, gamemode, mangohud, openjdk-8-jre | java-runtime (= 8), openjdk-17-jre | java-runtime (= 17)
+Suggests: libglfw3-wayland, gamemode, openjdk-8-jre | java-runtime (= 8), openjdk-17-jre | java-runtime (= 17)
 Provides: multimc, polymc
 Homepage: https://prismlauncher.org
 Priority: optional
 Section: contrib/games
-Filename: pool/main/p/prismlauncher/prismlauncher_9.4+ds-2~bpo13+1_amd64.deb
-Size: 5452488
-SHA256: 90ef77ef29882244116db2f4e84c9bc799bdebca2ece67342ea14668549804ea
-SHA1: d6f8cbeaa3818534c88eadcf644ffb0c4508feae
-MD5sum: d6510fe6fd765130fc2197d3836ef27d
+Filename: pool/main/p/prismlauncher/prismlauncher_10.0.0-1~bpo13+1_amd64.deb
+Size: 5368360
+SHA256: b3347365c082b7b9fa6fcf1240cbff8f9131f6417934c2e747c497b1c2dbfb6d
+SHA1: 9e9459bcc1baa256df81efd8c69779f5db3e4488
+MD5sum: 831075b3b4594381966d5b8399208669
 Description: FOSS Minecraft launcher supporting multiple instances and accounts
  Prism Launcher is a custom launcher for Minecraft that allows users to
  create multiple instances and use multiple accounts. As a fork of the

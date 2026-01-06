@@ -2,14 +2,50 @@ name: "Build and upload Prism Launcher Release"
 on: workflow_dispatch
 
 jobs:
+  # bookworm is separate because it doesn't need Termurin but does need libqt6opengl6-dev
+  build-bookworm:
+    name: Build for bookworm on ${{ matrix.arch }}
+    runs-on: ${{ (matrix.arch == 'armhf' || matrix.arch == 'arm64') && 'ubuntu-24.04-arm' || 'ubuntu-latest' }}
+    strategy:
+      matrix:
+        arch: [amd64, arm64]
+    steps:
+      - name: Checkout prismlauncher packaging
+        run: git clone --branch debian/unstable https://salsa.debian.org/BenTheTechGuy/prismlauncher.git
+      - name: Install Debian tools
+        run: sudo apt-get install -y devscripts git-buildpackage
+      - name: Extract original tarball from git
+        run: cd ./prismlauncher && gbp export-orig
+      - name: Build Debian package
+        uses: jtdor/build-deb-action@v1
+        env:
+          DEB_BUILD_OPTIONS: noautodbgsym
+        with:
+          before-build-hook: apt-get update && apt-get install -y devscripts && cd ./prismlauncher && dch -D ${{ matrix.suite }} --bpo ""
+          buildpackage-opts: --build=binary
+          docker-image: debian:bookworm-slim
+          extra-build-deps: libqt6opengl6-dev
+          host-arch: ${{ matrix.arch }}
+          source-dir: prismlauncher
+      - name: Import GPG key
+        id: importkey
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+      - name: Sign package
+        run: sudo chmod -Rv 777 ./debian && debsign -k${{ steps.importkey.outputs.fingerprint }} ./debian/artifacts/*.changes
+      - name: Upload package as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.suite }}-${{ matrix.arch }}
+          path: ./debian/artifacts/*
+          retention-days: 1
   build-debian:
     name: Build for ${{ matrix.suite }} on ${{ matrix.arch }}
     runs-on: ${{ (matrix.arch == 'armhf' || matrix.arch == 'arm64') && 'ubuntu-24.04-arm' || 'ubuntu-latest' }}
     strategy:
       matrix:
         suite:
-# temporarily disable bookworm due to dependency mismatch
-#          - bookworm
           - trixie
 # no forky yet, missing Adoptium repo
 #          - forky
@@ -123,7 +159,7 @@ jobs:
   commit:
     name: Upload packges to repository
     runs-on: ubuntu-latest
-    needs: [build-debian, build-ubuntu]
+    needs: [build-bookworm, build-debian, build-ubuntu]
     permissions:
       contents: write
     steps:
@@ -143,7 +179,7 @@ jobs:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
       - name: Include packages in repo
 #        run: for suite in bookworm noble plucky trixie questing forky; do for arch in amd64 arm64; do reprepro -V -P optional -b ./repo include "$suite" "./${suite}-${arch}/"*.changes; done; done
-        run: for suite in noble plucky trixie questing; do for arch in amd64 arm64; do reprepro -V -P optional -b ./repo include "$suite" "./${suite}-${arch}/"*.changes; done; done
+        run: for suite in bookworm noble plucky trixie questing; do for arch in amd64 arm64; do reprepro -V -P optional -b ./repo include "$suite" "./${suite}-${arch}/"*.changes; done; done
       - name: Commit changes to repo
         uses: EndBug/add-and-commit@v9
         with:

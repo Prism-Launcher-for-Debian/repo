@@ -37,7 +37,7 @@ jobs:
       - name: Upload package as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.suite }}-${{ matrix.arch }}
+          name: bookworm-${{ matrix.arch }}
           path: ./debian/artifacts/*
           retention-days: 1
   build-debian:

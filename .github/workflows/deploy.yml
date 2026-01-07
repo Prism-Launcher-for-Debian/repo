@@ -21,7 +21,7 @@ jobs:
         env:
           DEB_BUILD_OPTIONS: noautodbgsym
         with:
-          before-build-hook: apt-get update && apt-get install -y devscripts && cd ./prismlauncher && dch -D ${{ matrix.suite }} --bpo ""
+          before-build-hook: apt-get update && apt-get install -y devscripts && cd ./prismlauncher && dch -D bookworm --bpo ""
           buildpackage-opts: --build=binary
           docker-image: debian:bookworm-slim
           extra-build-deps: libqt6opengl6-dev

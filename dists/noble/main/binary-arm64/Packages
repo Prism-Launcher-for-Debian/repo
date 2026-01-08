@@ -1,5 +1,5 @@
 Package: prismlauncher
-Version: 10.0.0-1~noble1
+Version: 10.0.1-1~noble1
 Architecture: arm64
 Maintainer: Ben Westover <bjw@debian.org>
 Installed-Size: 12748
@@ -10,11 +10,11 @@ Provides: multimc, polymc
 Homepage: https://prismlauncher.org
 Priority: optional
 Section: contrib/games
-Filename: pool/main/p/prismlauncher/prismlauncher_10.0.0-1~noble1_arm64.deb
-Size: 5074356
-SHA256: a50a4cd21118437d688662a1e7c91ac17e70515cda1ad58ad10e546e87b84bac
-SHA1: 9009f84c5adbdfe1562f8696f19863e60ee8ea29
-MD5sum: ce2f001ec16a57c11398f2ab748bd46f
+Filename: pool/main/p/prismlauncher/prismlauncher_10.0.1-1~noble1_arm64.deb
+Size: 5084424
+SHA256: feda42854228a561f2d969799decd0e5068d33cabf4f5bf7d77b4e26be700c7a
+SHA1: 4e96be391c418b09fa698e693dd83f0b0985b095
+MD5sum: 35a1b9887c420c7f85eab32a2273b7d8
 Description: FOSS Minecraft launcher supporting multiple instances and accounts
  Prism Launcher is a custom launcher for Minecraft that allows users to
  create multiple instances and use multiple accounts. As a fork of the

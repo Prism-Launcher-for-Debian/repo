@@ -1,8 +1,8 @@
 Package: prismlauncher
-Version: 10.0.1-1~bpo13+1
+Version: 10.0.2-1~bpo13+1
 Architecture: amd64
 Maintainer: Ben Westover <bjw@debian.org>
-Installed-Size: 15458
+Installed-Size: 15466
 Depends: libarchive13t64 (>= 3.2.1), libc6 (>= 2.38), libcmark0.30.2 (>= 0.30.2), libgcc-s1 (>= 3.0), libqrencode4 (>= 3.2.0), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.4.0), libqt6gui6 (>= 6.4.0), libqt6network6 (>= 6.7.2), libqt6networkauth6 (>= 6.6.1), libqt6opengl6 (>= 6.1.2), libqt6widgets6 (>= 6.3.0), libqt6xml6 (>= 6.1.2), libstdc++6 (>= 14), libtomlplusplus3t64 (>= 3.2.0), zlib1g (>= 1:1.1.4), libqt6svg6, qt6-image-formats-plugins, qt6-wayland, mesa-utils, pciutils
 Recommends: default-jre | java-runtime (>= 21), flite, x11-xserver-utils
 Suggests: libglfw3-wayland, gamemode, openjdk-8-jre | java-runtime (= 8), openjdk-17-jre | java-runtime (= 17)
@@ -10,11 +10,11 @@ Provides: multimc, polymc
 Homepage: https://prismlauncher.org
 Priority: optional
 Section: contrib/games
-Filename: pool/main/p/prismlauncher/prismlauncher_10.0.1-1~bpo13+1_amd64.deb
-Size: 5370180
-SHA256: dc3ede8bc77ea829e8c6819cf6abbaad2cf27511fe90b38d3b82087da59f7e43
-SHA1: b713246901533261d49195c13fc23f52c79f4b4a
-MD5sum: 7ffcda94c26462992eb06b96f67d4bbf
+Filename: pool/main/p/prismlauncher/prismlauncher_10.0.2-1~bpo13+1_amd64.deb
+Size: 5371160
+SHA256: 0f42a9fc7f51e0ec3a965483424bf34e8dcb69b02d9d6c687976de951d1a9db4
+SHA1: b1d1e381d1edc92250eeed9c3f532c1d084c22e8
+MD5sum: c5dbc563b8d9bf8e85a8a730020c6ace
 Description: FOSS Minecraft launcher supporting multiple instances and accounts
  Prism Launcher is a custom launcher for Minecraft that allows users to
  create multiple instances and use multiple accounts. As a fork of the

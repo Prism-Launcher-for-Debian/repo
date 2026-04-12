@@ -123,8 +123,8 @@ jobs:
       matrix:
         suite:
           - noble
-          - plucky
           - questing
+          - resolute
         arch: [amd64, arm64]
     steps:
       - name: Checkout prismlauncher packaging
@@ -178,8 +178,8 @@ jobs:
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
       - name: Include packages in repo
-#        run: for suite in bookworm noble plucky trixie questing forky; do for arch in amd64 arm64; do reprepro -V -P optional -b ./repo include "$suite" "./${suite}-${arch}/"*.changes; done; done
-        run: for suite in bookworm noble plucky trixie questing; do for arch in amd64 arm64; do reprepro -V -P optional -b ./repo include "$suite" "./${suite}-${arch}/"*.changes; done; done
+#        run: for suite in bookworm noble trixie questing forky resolute; do for arch in amd64 arm64; do reprepro -V -P optional -b ./repo include "$suite" "./${suite}-${arch}/"*.changes; done; done
+        run: for suite in bookworm noble trixie questing resolute; do for arch in amd64 arm64; do reprepro -V -P optional -b ./repo include "$suite" "./${suite}-${arch}/"*.changes; done; done
       - name: Commit changes to repo
         uses: EndBug/add-and-commit@v9
         with:

@@ -1,7 +1,6 @@
 Origin: PrismLauncher
 Label: PrismLauncher
-Suite: testing
-Codename: forky
+Codename: resolute
 Date: Sun, 12 Apr 2026 04:58:54 UTC
 Architectures: amd64 arm64
 Components: main
@@ -9,21 +8,21 @@ Description: Prism Launcher repository for Debian and Ubuntu
 MD5Sum:
  d41d8cd98f00b204e9800998ecf8427e 0 main/binary-amd64/Packages
  7029066c27ac6f5ef18d660d5741979a 20 main/binary-amd64/Packages.gz
- a5465004e6cf7dd69fc8fed665d1ffa2 157 main/binary-amd64/Release
+ a850adc6f017d9f3d99332305aa0be7f 140 main/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 main/binary-arm64/Packages
  7029066c27ac6f5ef18d660d5741979a 20 main/binary-arm64/Packages.gz
- 4d11ed9183368d2da72673d1ef97df37 157 main/binary-arm64/Release
+ 6d08b9924d19767a3be001868f6b8707 140 main/binary-arm64/Release
 SHA1:
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-amd64/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-amd64/Packages.gz
- 95d8d930180112f72cb9af6d239a6b0c045e04f7 157 main/binary-amd64/Release
+ 869c4ecdf79c6ff1d924e8143c525ea2c2152adc 140 main/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-arm64/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-arm64/Packages.gz
- b67e5b3939424c9889a309fab4adffe82461bfda 157 main/binary-arm64/Release
+ 8543c836cb59b131f8f295beecf5951744b098f3 140 main/binary-arm64/Release
 SHA256:
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-amd64/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-amd64/Packages.gz
- cdc01715bbdc54754c0c46ae5229ffd78175dbfd82c7e1f05dfc5d2deb5cfe70 157 main/binary-amd64/Release
+ a1bc7606ddeeff9539ec020067b90b5c248441d7227b6f544bbd958af47988c7 140 main/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-arm64/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-arm64/Packages.gz
- 3a0d45387a9a23773d09f6027cd2ecae51c33d7cc103af84c049bfbc78c0d706 157 main/binary-arm64/Release
+ 37a2cb63323a5c15e512ed9ccf4e81a19273d39fd3d4a59e6343f6ee92003046 140 main/binary-arm64/Release

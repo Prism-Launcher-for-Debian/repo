@@ -5,7 +5,7 @@ Origin: PrismLauncher
 Label: PrismLauncher
 Suite: stable
 Codename: trixie
-Date: Fri, 10 Apr 2026 04:02:27 UTC
+Date: Sun, 12 Apr 2026 04:58:54 UTC
 Architectures: amd64 arm64
 Components: main
 Description: Prism Launcher repository for Debian and Ubuntu
@@ -32,17 +32,17 @@ SHA256:
  16f90c472f571ca558bd68ea8dcd9bfb80d8874a051d4bfb87a6e9fe55558252 156 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEriN+VQj4y9Vi5Jym1oV8YMYqWVEFAmnYdlMACgkQ1oV8YMYq
-WVF+uQ/+LH/22DNaacaR9duxiiVKi0SW0ouRfPI59y5Z2lsDKqsl3fc86QT7hWYV
-XSwWvMzMM5JkHFSnaC5r6l+M4H3p4w7faMNflJppnfhDvz7OV42xkrSMPfEGPgBb
-TUBX+PSLcGuvEwsL7BbpD96S3vaztFYQCFNDj8nWNgtnvtBl4pjMovJ4wIRdAhfM
-s0c+hMiNkp4nw5Pcx/rxvYbzkVj/kAGubE7C7I11lGAp3Ifprd1wE5dUpg/ws2Xz
-2xQmYTpJR/j7FVtXE5Zmne3+xg7dhPTtxw8iqjLrmP5cQreNHzeSwRLizxqY3wjm
-48KvMuN+MP15vbSqd1lVBn0zFC/M/pGd8M3eMu6p1BhneZaTaDfQ9oXhAjrNLPO4
-ff49miycSYAc+8vbFuNE/Ek1o9rKhJ8QWatb/8WP3GzFsLwyORSjgzfR8FwGSx3p
-SjfvvjEDFGtkgERMlDs3ICbYuz9KDgxCJrrT0Uw410i3J9V7swTwFfQqE6VW+9d/
-ha9AsEO26tUn6nK0ww2W/brUoDGxrM4QhnifTfSHJn9rmscmVXqU3b0zeCyMbpB8
-fqqGePSYI8fxdPqy53JXlhEJeD1fOKFUfC0GC5aLm4c3P9MEVxmiEKU6XVelrj9V
-WiBgzq7lmx44K+1BAl0nqZyKZzkWYJtdoTauU4T2Nnudv8wlAwE=
-=xtfQ
+iQIzBAEBCgAdFiEEriN+VQj4y9Vi5Jym1oV8YMYqWVEFAmnbJo4ACgkQ1oV8YMYq
+WVEDRBAAlowG9TlNjioP0+HHAcfrh8Ys7iofKkhvGLVFPk71SeagusYZj+Nee9iq
+uK6Cgo4TxwJKoPz0j34Lj8OuNu4EyqBlU/RdAUA9OMYFz1gccwTXHXRUhujlaVpg
+FqlkMU/XTNbbmHCWEavG5QP64hHOFQ7o/hbSEOoBu7ggABgBq2vHWaEfAl5fBdNA
+IL9cywWdgmtI+FYasUBBQ8rj+QgwtH+jAOceMS18qbHVV7vJ/u/QRDk1xvAqtNec
+Wq1GABgAcDiGqi42dtIoRNyoVwcZv55eCVRFPKUeUKdBQQeV3BV5snZnKOY4WbYZ
+3Y5FtVo7jtaQ0wgRzRwg7p0QUS/TOMXPySAnIELZxAa4d6WrHk52C9txgCLZ8GTR
+CvytF7JSJ8yOgoMFtV0fZN0ywxS31SU+r9fzUvxd2ey0YxBmlMhY627MVUAhHMei
+D+proZPpmJ1zx2MmnPjP8P6XLcD8Ky4vvvrSNS03soFOVbDuBad08PXlrjLjcK/j
+OpPCiH8zNdgZ4INtA1tM85crmmN3aMcGJ1o5hvEPqoqwidb5H8xS4tYxmc7MDizT
+OhZ6USBDapd/16yL2TOO/zywxiaLPo5JNQReQZMV1wOYtV7rns/4eBoxjTAARLkv
+eRP9rKTvCo2xLBdfTtm56hyNbbBFbHcfA6TeX0SvoNIicINkcEs=
+=RqKk
 -----END PGP SIGNATURE-----

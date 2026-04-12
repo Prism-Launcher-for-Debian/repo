@@ -2,7 +2,7 @@ Origin: PrismLauncher
 Label: PrismLauncher
 Suite: oldstable
 Codename: bookworm
-Date: Fri, 10 Apr 2026 04:02:26 UTC
+Date: Sun, 12 Apr 2026 04:58:55 UTC
 Architectures: amd64 arm64
 Components: main
 Description: Prism Launcher repository for Debian and Ubuntu

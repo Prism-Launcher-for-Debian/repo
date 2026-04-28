@@ -21,7 +21,7 @@ jobs:
         env:
           DEB_BUILD_OPTIONS: noautodbgsym
         with:
-          before-build-hook: apt-get update && apt-get install -y vim devscripts && cd ./prismlauncher && dch -D bookworm --local ~repo+bookworm
+          before-build-hook: apt-get update && apt-get install -y devscripts && cd ./prismlauncher && dch -D bookworm --local ~repo+bookworm ""
           buildpackage-opts: --build=binary
           docker-image: debian:bookworm-slim
           extra-build-deps: libqt6opengl6-dev
@@ -62,7 +62,7 @@ jobs:
         env:
           DEB_BUILD_OPTIONS: noautodbgsym
         with:
-          before-build-hook: apt-get update && apt-get install -y vim && cd ./prismlauncher && dch -D ${{ matrix.suite }} --local ~repo+${{ matrix.suite }}
+          before-build-hook: cd ./prismlauncher && dch -D ${{ matrix.suite }} --local ~repo+${{ matrix.suite }} ""
           buildpackage-opts: --build=binary
           docker-image: debian:${{ matrix.suite }}-slim
           extra-build-deps: temurin-17-jdk

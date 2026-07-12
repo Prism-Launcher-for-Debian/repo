@@ -1,28 +1,28 @@
 Origin: PrismLauncher
 Label: PrismLauncher
 Codename: resolute
-Date: Wed, 29 Apr 2026 00:06:12 UTC
+Date: Sun, 12 Jul 2026 00:34:58 UTC
 Architectures: amd64 arm64
 Components: main
 Description: Prism Launcher repository for Debian and Ubuntu
 MD5Sum:
- 6e789a6cb0945657bf7f7f4806beb9dc 1494 main/binary-amd64/Packages
- bb946a27ed59dcc9c02095d88de26fcb 824 main/binary-amd64/Packages.gz
+ 09a2d1e637a900f532bc0424602b9ed5 1494 main/binary-amd64/Packages
+ 07a622c05dd26b020ecf00c473a5b35e 824 main/binary-amd64/Packages.gz
  a850adc6f017d9f3d99332305aa0be7f 140 main/binary-amd64/Release
- 1c6ea43873ccc9cd590d9a5d86b0b190 1494 main/binary-arm64/Packages
- d19fce52ac76984dc04b28a7ebbc2f9d 826 main/binary-arm64/Packages.gz
+ 0740906e70f30382de50f424d675e5c1 1494 main/binary-arm64/Packages
+ c04dcff89f3fe8e92f2b2896791ba3ad 823 main/binary-arm64/Packages.gz
  6d08b9924d19767a3be001868f6b8707 140 main/binary-arm64/Release
 SHA1:
- 057e7c43d8f8aa2ebb87b4afb02ed4273467f7eb 1494 main/binary-amd64/Packages
- 6a64de5695f99dccfdb0d1d75e1ab1ca9e712d5c 824 main/binary-amd64/Packages.gz
+ 576447f5f8774de9533d4e2dc561c1c99c1efef8 1494 main/binary-amd64/Packages
+ 788b3f3863e6b1b7adca538a7c9978056aad87dc 824 main/binary-amd64/Packages.gz
  869c4ecdf79c6ff1d924e8143c525ea2c2152adc 140 main/binary-amd64/Release
- d6e8d307487605248fee9aef42eec5457bd32d08 1494 main/binary-arm64/Packages
- f7bc0e5738204b6e892277aa55e1bf3f51ba8b03 826 main/binary-arm64/Packages.gz
+ f1ce558aef2b519da9fbe512fe4f6b4032a019fe 1494 main/binary-arm64/Packages
+ fb329227fe7aaf7a81a065f528222f4ebf096565 823 main/binary-arm64/Packages.gz
  8543c836cb59b131f8f295beecf5951744b098f3 140 main/binary-arm64/Release
 SHA256:
- bc3bc8cc74e749ea62a39453128aaf9b5233c0bbf082d09f4c56d9e17ba7c254 1494 main/binary-amd64/Packages
- 8808062db72d414344404a9896506612f92941117ac012c6f75a70231cc4c39a 824 main/binary-amd64/Packages.gz
+ b4c310e9392a2c42e0285c57af5496b0872b2e1795b8c477b4a511213518efef 1494 main/binary-amd64/Packages
+ ce0cd612414ac13dc5e40f815b0cac714db17bec010ada55f663c48e50f70e01 824 main/binary-amd64/Packages.gz
  a1bc7606ddeeff9539ec020067b90b5c248441d7227b6f544bbd958af47988c7 140 main/binary-amd64/Release
- 9b5cbdd6ff5d163f9a60cfcab2f03aa85454cb1e21021edbf909ef4d9fcd80fd 1494 main/binary-arm64/Packages
- 4a4ae554cdb30c6bab0c6986c2a6037aa2bb9c0fb80a4b2af3fc6c1b25bf3011 826 main/binary-arm64/Packages.gz
+ 1ce32024d439b8e289ab7edd81948f5b5ffff86150bc292db0d74a7e73fdac78 1494 main/binary-arm64/Packages
+ b1d19b2d7760176af99125a051dec4801ed55531bf5aa1ab19af75234acc781a 823 main/binary-arm64/Packages.gz
  37a2cb63323a5c15e512ed9ccf4e81a19273d39fd3d4a59e6343f6ee92003046 140 main/binary-arm64/Release

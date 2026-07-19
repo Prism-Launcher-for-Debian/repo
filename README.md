@@ -8,7 +8,7 @@ URIs: https://prism-launcher-for-debian.github.io/repo
 Suites: $(. /etc/os-release; echo "${UBUNTU_CODENAME:-${DEBIAN_CODENAME:-${VERSION_CODENAME}}}")
 Components: main
 Signed-By: /usr/share/keyrings/prismlauncher-archive-keyring.gpg" | sudo tee /etc/apt/sources.list.d/prismlauncher.sources \
- && sudo apt update
+ && sudo apt update \
  && sudo apt install prismlauncher
 ```
 

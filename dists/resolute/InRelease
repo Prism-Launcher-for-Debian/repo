@@ -4,7 +4,7 @@ Hash: SHA512
 Origin: PrismLauncher
 Label: PrismLauncher
 Codename: resolute
-Date: Thu, 22 Oct 2026 14:05:29 UTC
+Date: Thu, 22 Oct 2026 14:12:25 UTC
 Architectures: amd64 arm64
 Components: main
 Description: Prism Launcher repository for Debian and Ubuntu
@@ -31,17 +31,17 @@ SHA256:
  37a2cb63323a5c15e512ed9ccf4e81a19273d39fd3d4a59e6343f6ee92003046 140 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEriN+VQj4y9Vi5Jym1oV8YMYqWVEFAmraGCkACgkQ1oV8YMYq
-WVFHOBAAl6z/LiH0XqFOAeh27ZYb6hTOu7c86+BBKuVkZ8/i/4HjqJLeiepKc8Cl
-ZkVq1JKlvXY4YBYXGxQgk+44UiKD+7h3e7l8sCyWaSV1VjlJFCYx48Jcm8PXfdkT
-8QkGYs+xZdosVmG39abZ0dqLaq1UVOQjl0meHCzuRods+M/xXxg1Q1AgiiLkSMQV
-hHGybFPIENt3Mn7YVoIX+Dj1qjaFol2npwumQn3huX39ql0YYxIu+JinU2JBUfsZ
-KwgXgFBAXyCDGqDE9d1CmoFz+BSW08GalYm6WG4Iuqg9v7Ld6maTv5usxPkReu5/
-4ioAogp3XK3z6qziXRXUF//blizVhvWNC0sLOJF5G9Iut/2UcZBxIK/r93o/G/H+
-1uWhceDeCKpTXAEHih0lgksHUhHSAOyklzMXcrXf2MqsCwwhchmp+DdNVm1ZGUKN
-jMyxDPtrixo6bHo//wThLi11iBNKn3lFs81rm+L5Aypbog2AGoKmWWm9Hl5XE+1v
-vE7om5ifejtwHEV04jALgwEA+7zOD6uBUj89IXovAC9/L7FV9OK4l+MG/Rx+PGcP
-s6CZCRzDrT9zB+UCFqE/VNi2Hzj/tMDN394JWCDzeeeRiStcrxu2YzK/FDGVRtb4
-UTUOdk8AGXYOt9jXceeeRj5haKlPTXgDeYrkJ8Es0lCjzij4asM=
-=lA/p
+iQIzBAEBCgAdFiEEriN+VQj4y9Vi5Jym1oV8YMYqWVEFAmraGcoACgkQ1oV8YMYq
+WVG9Ow/+Lfs6WdhGC2aX06/560+K4TGiFAf26vzmOrZTuZbKsRqr5tiXpUzQ1Ulj
+gHibJmSw/VI28We7369k4JcdCwZAZmYXlteLDzBDGvmcGiUE7QGNW9xzz65zurMI
+4elLmU26grvRK4wSO62OgGDb+VczGI1crlshJKXXKDyYj89eGxvFE1CSwwDB9x/A
+xHfuwhsxm6qcv/ppj8+kxXPJ0GG/YYTNjtQ9zb43z8+OME++unDRXrXV5Cywe78Y
+QgcWfvIy7lpG8J1hNKYamtk8VESm38KJMMaalRzLiGVhZG0Hu6yo+dQ6zxpU86Mb
+nvi2Gli/iBm6OVZ2whok854bOCqYJbjHQXlYLCDj51uQ6nDvs/pKeV8mOAufDx4n
+85HUzIfxbN5lB2+Y1Ya7kolZIe/MUzoQvE3GThutJJqSXRWjTFUebw2uNn/dQ+ch
++3aK+vxMYP6Y0LGKGQ7mtJ1V88rHpZi4/xONM/bLP1IcnevTy9PxEhxbC5tpNPoV
+xghOvyZb/WupFBZXF/UNL25UpN8dl9fXwraUnD9GWIdQkfgHieKzgjc49azHQswi
+3zbWkM1+XBSetJ2MZ4pdokTTY90fKjVn73JB4e21q4qyV6tS17Q579RvhAZkFpDr
+PGTwaw6j9PEjmy5vP3HADzhvpAVsQLPq65qIdNg2/FvRJbjroYc=
+=qQtY
 -----END PGP SIGNATURE-----

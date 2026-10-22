@@ -5,7 +5,7 @@ Origin: PrismLauncher
 Label: PrismLauncher
 Suite: oldstable
 Codename: bookworm
-Date: Mon, 28 Sep 2026 23:55:19 UTC
+Date: Thu, 22 Oct 2026 14:05:29 UTC
 Architectures: amd64 arm64
 Components: main
 Description: Prism Launcher repository for Debian and Ubuntu
@@ -32,17 +32,17 @@ SHA256:
  69b21279d2d19b7ad7e8fd705b7e29d69e325ca26cc4a153320e10d3bc6a3766 159 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEriN+VQj4y9Vi5Jym1oV8YMYqWVEFAmq6/mcACgkQ1oV8YMYq
-WVFVfg/+NaMYb9DoWZau1wAXYWvqvmD1t2j9jV6obSIdPHm2eob6nnbu9dwYOt5Q
-2YsZP6bd5lHSTlZsttO1xGovnIR9PxzZVo0o/ImUnbIZw9Gh3/prAfhfbBM0pCQi
-N61iDatLE2IVlQLGqWv3zS4mJXWV3nndA66/9XEhGojByxGpIcrcRBsIH5Kmtmgz
-jWtklbpM+0zQz1Qlxqm95iNWGxfJCZK/dQHeDVGj3/jcNCRB/hoZ4j+bpefQiYai
-P+Srf45NJ7tgKZ3bPhPlbUv5bbLt+q3mXMsarhFTpkpbJafCPwBXknGGtENc4+J9
-gnLKNLXY/QkNS6LFrpwwqXVc4k0S9XGKbCT3y6oO6z3t1Ccc56aJcbJg4snxFkJq
-78q0RdlIL6hqsVIjETl+6V7DQxQaCCLoXsjQyw92Lvfu+oJkfFbfVfeTj0/c3mzE
-0Nyy7u9lcQpf3PhSNW260mCdRvrtPnwoSMSB9uqCR3z640vBEulxDvQunvpKhzXE
-n6tBVPQptN74LGc1zMrmx85mJm0JO5VDntC1uU/uHwM69U4fYdrbiWjmrePGxocK
-BE3m8JbUm9vZf3Cqhj9xIlI33SwtIm7TYClhMzRixg8W9srDxJr8pKOQ+jBS+vkG
-dkZAh1QtuKUxDa1TI7YFHtgUet6nWbTQPJ4yXt3Z3msx1BnVP3o=
-=VVie
+iQIzBAEBCgAdFiEEriN+VQj4y9Vi5Jym1oV8YMYqWVEFAmraGCkACgkQ1oV8YMYq
+WVHZOQ/+OFvQPW6Ng0YzLR6UqxZfPo3i3sjqH6a+6RfuEk46LIwzzntd0lIXOQ5b
+NPMMsva+U2bjq6a4Z9UhDJJlau1ZIRD6qcjogJpWmZJZ00n6dyozodWkWkvb2w7b
+NpaZDRJC/WuBFfPNxpN+SPbCUqeX2GpyzjBCbR7RRlOmg3nENzPsOd82xofSzE5f
+IdjnpS4wAdi7CrL8nIaY/zUAwwQvGdmniXfqL18p3Mybhu66eq6bcX53NWuZsOiz
+wnHGPoovzbwmZV5y0YxS1xa5Q0bY5ARxgyfKp1PjV46lweJ2B6UFIr7+hDgsv6nS
+JEPvcfpoMVbh7xPC2bWcGPp3QRDC05qmua8HZ1kTJwfZMSo57MDg/tvQlngE1oWv
+mWuEMOHbw+1CDwfgyohmuOl+2r8hfuvwBVTiYie8b/m2TkXk7wak606STE/ua/UX
+uB8ZLRaTkZv/tSo6UG6ciu23W7VYcKjjmlrmWLmQ1mHYRHmeydiem+LX/dvlcJ+S
+ndcwHGHIkY5DGHBRaK64lsoL1HCtTkyGUPh5s1MlrGzneU5W9KYWFs5/ryFvKTaS
+ZeSjM/mXwaYMgb/ygJi1IzKq4CjPpTRBxcz/AaZEYe1RwloMhQ6866GJtYnCVgTF
+B5AYrdTekJPgTTV9vAQsdaSASlZnwPyt8EEeC95UAsu9RSw3y5c=
+=KZKS
 -----END PGP SIGNATURE-----
